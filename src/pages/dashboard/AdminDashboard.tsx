@@ -4,20 +4,14 @@ import AdminQuickActions from "../../components/dashboard/AdminQuickActions";
 import Layout from "../../components/layout/Layout";
 
 const AdminDashboard = () => {
+  // Define the theme manually
   const [theme, setTheme] = useState<"light" | "dark">("light");
-  const toggleTheme = () =>
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-  }, [theme]);
 
   return (
     <Layout>
       <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
-      <AdminOverview theme={theme}, toggleTheme={toggleTheme} />
+      <AdminOverview theme={theme} />
       <AdminQuickActions theme={theme} />
-      
     </Layout>
   );
 };
