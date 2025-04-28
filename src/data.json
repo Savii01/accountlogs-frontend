@@ -1,0 +1,47 @@
+{
+  "admin": [
+    { "name": "Dashboard", "path": "/dashboard/admin", "icon": "MdDashboard" },
+    { "name": "Categories", "path": "/admin/categories", "icon": "MdCategory" },
+    { "name": "Accounts", "path": "/admin/accounts", "icon": "MdAccountCircle" },
+    { "name": "Orders", "path": "/admin/orders", "icon": "MdShoppingCart" },
+    { "name": "User Management", "path": "/admin/users", "icon": "MdPeople" },
+    { "name": "Analytics", "path": "/admin/analytics", "icon": "MdInsights" },
+    { "name": "Logout", "path": "/logout", "icon": "MdLogout" }
+  ],
+  "customer": [
+    { "name": "Dashboard", "path": "/dashboard/customer", "icon": "MdDashboard" },
+    { "name": "Accounts", "path": "/purchased", "icon": "MdVerifiedUser" },
+    { "name": "Order History", "path": "/orders", "icon": "MdHistory" },
+    { "name": "Logout", "path": "/logout", "icon": "MdLogout" }
+  ],
+  "users": [
+    { "id": 1, "name": "Alice Johnson", "email": "alice@example.com", "role": "admin" },
+    { "id": 2, "name": "Bob Smith", "email": "bob@example.com", "role": "customer" },
+    { "id": 3, "name": "Carla Gomez", "email": "carla@example.com", "role": "customer" }
+  ],
+  "categories": [
+    { "id": 1, "name": "Facebook" },
+    { "id": 2, "name": "Instagram" },
+    { "id": 3, "name": "Netflix" },
+    { "id": 4, "name": "Reddit" },
+    { "id": 5, "name": "VPN Logs" },
+    { "id": 6, "name": "Texting Logs" }
+  ],
+  "accounts": [
+    { "id": 1, "categoryId": 1, "name": "Facebook Account", "age": "2 years", "country": "USA", "price": 10, "status": "available" },
+    { "id": 2, "categoryId": 2, "name": "Instagram Account", "age": "1 year", "country": "UK", "price": 8, "status": "available" },
+    { "id": 3, "categoryId": 3, "name": "Netflix Premium", "age": "6 months", "country": "Canada", "price": 15, "status": "sold" },
+    { "id": 4, "categoryId": 4, "name": "Reddit Aged Account", "age": "5 years", "country": "Germany", "price": 20, "status": "available" },
+    { "id": 5, "categoryId": 5, "name": "VPN Logs Nord", "age": "N/A", "country": "USA", "price": 5, "status": "available" },
+    { "id": 6, "categoryId": 6, "name": "Google Voice Log", "age": "N/A", "country": "USA", "price": 7, "status": "sold" },
+    { "id": 7, "categoryId": 6, "name": "TextPlus Account", "age": "N/A", "country": "USA", "price": 4, "status": "available" }
+  ],
+  "orders": [
+    { "id": 1, "userId": 1, "accountId": 3, "total": 15, "status": "completed", "date": "2025-04-20" },
+    { "id": 2, "userId": 2, "accountId": 6, "total": 7, "status": "completed", "date": "2025-04-21" }
+  ],
+  "transactions": [
+    { "id": 1, "user": "Alice Johnson", "product": "Netflix Premium", "amount": 15, "date": "2025-04-20" },
+    { "id": 2, "user": "Bob Smith", "product": "Google Voice Log", "amount": 7, "date": "2025-04-21" }
+  ]
+}

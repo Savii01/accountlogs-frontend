@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import "tailwindcss/preflight"; */
+@import "tailwindcss";
+
+
+/* Force dark mode to be class-based */
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/clashdisplay/ClashDisplay-Regular.woff') format('woff'),
+       url('/src/assets/fonts/clashdisplay/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/clashdisplay/ClashDisplay-Medium.woff') format('woff'),
+       url('/src/assets/fonts/clashdisplay/ClashDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/clashdisplay/ClashDisplay-Semibold.woff') format('woff'),
+       url('/src/assets/fonts/clashdisplay/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/assets/fonts/clashdisplay/ClashDisplay-Bold.woff') format('woff'),
+       url('/src/assets/fonts/clashdisplay/ClashDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic; /* Fixed */
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic; /* Fixed */
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-ExtraBold.woff') format('woff'); /* Fixed */
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic; /* Fixed */
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic; /* Fixed */
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic; /* Fixed */
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  src: url('/src/assets/fonts/Schibsted-Grotesk/vertopal.com_SchibstedGrotesk-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic; /* Fixed */
+}
+
+@layer utilities {
+  /* Font Utility Classes */
+  .font-clashdisplay { font-family: 'ClashDisplay', sans-serif; }
+  .font-clashdisplay-medium { font-family: 'ClashDisplay', sans-serif; font-weight: 500; }
+  .font-clashdisplay-semibold { font-family: 'ClashDisplay', sans-serif; font-weight: 600; }
+  .font-clashdisplay-bold { font-family: 'ClashDisplay', sans-serif; font-weight: 700; }
+  .font-schibstedgrotesk { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 400;}
+  .font-schibstedgrotesk-italic { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 400; font-style: italic; } /* Fixed */
+  .font-schibstedgrotesk-medium { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 500;}
+  .font-schibstedgrotesk-medium-italic { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 500; font-style: italic; } /* Fixed */
+  .font-schibstedgrotesk-semibold { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 600;}
+  .font-schibstedgrotesk-semibold-italic { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 600; font-style: italic; } /* Fixed */
+  .font-schibstedgrotesk-bold { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 700;}
+  .font-schibstedgrotesk-bold-italic { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 700; font-style: italic; } /* Fixed */
+  .font-schibstedgrotesk-extrabold { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 800;}
+  .font-schibstedgrotesk-extrabold-italic { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 800; font-style: italic; } /* Fixed */
+  .font-schibstedgrotesk-black { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 900;}
+  .font-schibstedgrotesk-black-italic { font-family: 'SchibstedGrotesk', sans-serif; font-weight: 900; font-style: italic; } /* Fixed */
+
+
+   
+  /* Animations */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+  }
+  
+  @keyframes heartBeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.3); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.3); }
+    70% { transform: scale(1); }
+  }
+
+  @keyframes flipHorizontal {
+    50% { transform: rotateY(180deg); }
+  }
+
+  @keyframes flipVertical {
+    50% { transform: rotateX(180deg); }
+  }
+
+  @keyframes swing {
+    20% { transform: rotate3d(0, 0, 1, 15deg); }
+    40% { transform: rotate3d(0, 0, 1, -10deg); }
+    60% { transform: rotate3d(0, 0, 1, 5deg); }
+    80% { transform: rotate3d(0, 0, 1, -5deg); }
+    100% { transform: rotate3d(0, 0, 1, 0deg); }
+  }
+
+  /* Utility Classes */
+  .animate-wiggle { animation: wiggle 1s ease-in-out; }
+  .animate-heartBeat { animation: heartBeat 1s; }
+  .animate-hflip { animation: flipHorizontal 2s; }
+  .animate-vflip { animation: flipVertical 2s; }
+  .animate-swing { animation: swing 2s ease-out; }
+
+  /* Custom Colors */
+  .text-darkblue { color: #06373b; }
+  .bg-darkblue { background-color: #06373b; }
+  .text-lightBlue { color: rgb(0, 88, 252); }
+  .bg-lightBlue { background-color:rgb(0, 88, 252); }
+  .text-grayblue { color: #5f8285; }
+  .bg-grayblue { background-color: #5f8285; }
+  .text-lemon { color: #E5FF2A; }
+  .bg-lemon { background-color: #E5FF2A; }
+  .text-lilBlack { color: #1A1C1F; }
+  .bg-lilBlack { background-color: #1A1C1F; }
+  .text-littBlack { color:rgb(36, 38, 41); }
+  .bg-littBlack {background-color:rgb(36, 38, 41); }
+
+  /* Font */
+  .font-sans { font-family: 'Montserrat', sans-serif; }
+}
